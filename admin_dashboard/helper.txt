@@ -1,0 +1,2 @@
+        if ($user && password_verify($credentials['password'], $user->password)) {
+        if ($user && $user->password === $credentials['password']) {
